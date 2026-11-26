@@ -1,0 +1,19 @@
+[Unit]
+Description=XMRig Monero Miner
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root
+ExecStart=/usr/local/bin/xmrig -c /root/xmrig-config.json
+Restart=always
+RestartSec=10
+Nice=-5
+CPUWeight=100
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
