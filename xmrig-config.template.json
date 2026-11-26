@@ -1,0 +1,26 @@
+{
+  "autosave": false,
+  "pools": [
+    {
+      "url": "pool-eu.supportxmr.com:3333",
+      "user": "WALLET_ADDRESS_HERE",
+      "pass": "WORKER_NAME_HERE",
+      "coin": "monero"
+    }
+  ],
+  "cpu": {
+    "enabled": true,
+    "huge-pages": false,
+    "max-threads-hint": 100,
+    "rx": [
+      0,
+      1
+    ],
+    "rx/wow": [
+      0,
+      1
+    ]
+  },
+  "donate-level": 1,
+  "print-time": 30
+}
