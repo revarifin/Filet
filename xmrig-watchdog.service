@@ -1,0 +1,7 @@
+[Unit]
+Description=XMRig Watchdog (health check + auto restart)
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/xmrig-watchdog.sh
